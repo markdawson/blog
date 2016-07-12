@@ -23,6 +23,7 @@ def get_env_variable(var_name):
         error_msg = "Set the %s environment varaible" % var_name
         raise 
 
+SITE_ID = 1
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -47,6 +48,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'taggit',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 )
 
 MIDDLEWARE_CLASSES = (
