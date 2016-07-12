@@ -23,7 +23,7 @@ class Post(models.Model):
 	status = models.CharField(max_length=10, 
 							choices=STATUS_CHOICES,
 							default='draft')
-	tags = TaggableManager()
+	tags = TaggableManager(blank=True)
 
 	class Meta:
 		ordering = ('-publish',)
