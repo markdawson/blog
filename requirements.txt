@@ -1,0 +1,4 @@
+django==1.8.5
+django-taggit==0.17.1
+Markdown==2.6.2
+pytz
